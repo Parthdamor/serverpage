@@ -1,0 +1,170 @@
+:root{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    text-align: center;
+    align-items: center;
+    color: white;
+    background: #21252A;
+    /* width: 100%; */
+    scrollbar-gutter: stable;
+    width:-webkit-fill-available;
+}
+
+.page-content{
+    position:relative;
+    width: 100%;
+    
+}
+.userimg{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #00a380;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+    align-items: center;
+}
+
+.logoimgdiv{
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    position: relative;
+    display: flex;
+
+}
+
+
+
+
+/* this is a ise for background img to change */
+.logoimg{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    position: absolute;
+    background-position: center;
+}
+
+@media screen and (max-width: 600px) {
+    /* Styles for screens up to 600px wide */
+    .logoimg {
+        /* Add specific styles for smaller screens */
+        width: auto;
+        height: 100%;
+        justify-content: center;
+        position: absolute;
+        background-position: center;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+    /* Styles for screens between 601px and 1200px wide */
+    .logoimg {
+       
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    /* Styles for screens larger than 1200px wide */
+    .logoimg {
+        /* Add specific styles for larger screens */
+    }
+}
+
+
+/* media .content end tage*/
+
+
+
+
+.card-degine{
+    
+    position: absolute;
+    height: 200;
+    width: 200px;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 255, 255, 0.199);
+    text-align: center;
+    display: block;
+    font-weight: 700;
+    color: #1f1f1f;
+    font-family: "Source Sans Pro",sans-serif!important;
+    margin-bottom: 5px;
+    letter-spacing: -.3px
+}
+
+#username {
+    margin: 0; /* Remove default margin from h1 */
+}
+
+
+.card-style{
+    background-color: black;
+    overflow: hidden;
+    margin: 0 16px 30px 16px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 4px 24px 0 rgba(0,0,0,.08);
+}
+
+.content{
+    margin: 20px 15px 20px 15px;
+    display: flow;
+
+}
+
+.row{
+    /* border:2px solid brown; */
+    display: flex;
+    width: 100%;
+    justify-content: space-between; 
+    
+}
+
+.col{
+    
+    /* border:2px solid rgb(6, 54, 212); */
+    box-sizing: border-box;
+    flex-basis: calc(33.33% - 10px); /* Set column width, accounting for margin */
+    margin: 5px; /* Adjust margin as needed */
+    
+}
+
+.col-6{
+    width: 100%;
+    max-width: 100%;
+    background-color: #DA4453;
+    /* border:2px solid rgb(198, 212, 6); */
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y);
+    margin: 10px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.row-img{
+
+    padding: 2rem;
+}
+.col-img{
+    max-width: 100%;
+    margin-top: var(--bs-gutter-y);
+    margin: 0px 0px 24px;
+    padding: 0px 12px;
+}
+
+.col-img img{
+    border-radius: 1rem;
+    gap: 2rem;
+}
